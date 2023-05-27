@@ -1,0 +1,159 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+#btn-style {
+  height: 6px;
+  width: 6px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+#btn-style:hover {
+  background-color: teal;
+  color: white;
+}
+
+.option-div {
+  display: flex;
+  gap: 9px;
+  margin-left: 24px;
+}
+
+.box {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px;
+  height: auto;
+  text-align: left;
+}
+.pagination-btn {
+  display: flex;
+  gap: 20px;
+
+  padding-bottom: 14px;
+}
+
+
+.pagination-btn button {
+  width: 8%;
+  height: 38px;
+  cursor: pointer;
+ font-weight: bold;
+}
+
+.progress {
+  width: 70%;
+}
+#prog {
+  display: grid;
+  grid-column: repeat(2, 1fr);
+  width: 50%;
+  height: auto;
+  align-items: right;
+  margin-left: 50%;
+  margin-top: -30px;
+
+}
+
+.pagination {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.pages {
+  margin-left: 80%;
+  margin-top: -9px;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+}
+
+
+/* ... */
+
+.paginationButton {
+  background-color: rgb(111, 128, 128);
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+}
+.paginationButton.active{
+    background-color: green;
+    color: white;
+  }
+
+
+
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+    margin-right: 25px;
+  }
+
+  .option-div {
+    display: flex;
+    gap: 20px;
+    margin-left: 24px;
+  }
+
+  .pages {
+    margin-left: 30%;
+    margin-top: -9px;
+  }
+
+  .progress {
+    width: 70%;
+    border: 2px solid red;
+  }
+
+  .pagination-btn button {
+    width: 17px;
+    margin-top: 12px;
+    height: 7px;
+    font-weight: lighter;
+    padding-right: 9px;
+   
+  }
+
+  
+
+  .pagination {
+    width: 45%;
+    height: 44px;
+    margin: auto;
+    margin-top: 35px;
+  }
+
+  .pagination button {
+    border: 1px solid gray;
+    width: 62px;
+    height: 33px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  #prog {
+    width: 95%;
+    margin: auto;
+    margin-top: -60px;
+    height: 5px;
+  }
+
+  .pages {
+    margin-top: -8px;
+    margin-left: 80%;
+    font-size: 12px;
+  }
+
+  #progress-line {
+    height: -1px;
+    width: auto;
+  }
+}
